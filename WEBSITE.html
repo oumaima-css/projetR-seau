@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf_8">
+		<title> Notre projet </title> 
+		<link rel="stylesheet" href ="style.css">
+	</head>
+	
+	<body>
+	<div id="carte">
+		<img src= "https://issi.ac.ma/Content/Site/images/logo.jpeg"> </br>
+		<h1> Examen finale de réseau : </br> Partie théorique de projet </h1>
+		<table width="100%" border ="1" cellspacing="1" cellpadding="1"><tr><td> <h1> Le protocole http/https </h1> </td><tr></table>
+		<h3>  Realisé par : Mme.BENDAHAN Oumaima et M.OUAZIZ Anass </h3> 
+		<h3> Encadré par Chére professeur : Dr.DAHA IMANE  </h3>
+		</br></br></br> 
+		<h2> Qu'est ce qu'un protocole http ? </h2> 
+		<h3> HTTP (Hypertext Transfer Protocol) est le protocole applicatif utilisé pour l'échange de données du World Wide Web.</br>
+		En d'autre terme, c'est le protocole qui permet pour la diffusion de pages WEB et le fonctionnement des sites internet. </h3>
+			<img src= "https://tse4.mm.bing.net/th/id/OIP.Av-DSTfomKXTjQ4ef5rMfQHaEK?pid=ImgDet&rs=1"> 
+		</br> 	</br> 	</br> 	
+		
+		<h2> Comment utilise-t-on le protocole http ? </h2> 
+		<h3> Le Web (donc le protocole HTTP) utilise le réseau Internet comme il peut être sur un réseau privé non relié à Internet.</br>
+		De même, Internet est utilisé par beaucoup d’autres protocoles de communication autre que le HTTP. </h3>
+			<img src= "https://th.bing.com/th/id/R748314307c5e2e2e95ddfa6239e85294?rik=5%2bQ4WwbZYvBtlw&riu=http%3a%2f%2ftechstream.org%2fimages%2fimg%2fHTTPS.
+			jpg&ehk=k6Io2zk8dXYuDFfRIEWdSd0bI%2fmHqepivY%2fIhb%2f174A%3d&risl=&pid=ImgRaw"> 
+		</br> 	</br> 	</br>
+		
+		<h2> Le protocole HTTP: versions  </h2> 
+		<br> 
+			<img src= "https://www.malekal.com/wp-content/uploads/protocole-http-comment-ca-marche-700x346.jpg"> 
+			
+		
+
+			<ul>
+					<li> HTTP/1.1 </li>
+				<h3> Dans HTTP/1.0, une nouvelle connexion TCP est créée pour chaque échange de demande et réponse entre les clients et les serveurs.
+Ainsi toutes les demandes encourent une pénalité de latence car les prises de contact TCP et TLS sont terminées avant chaque demande.
+
+La révision HTTP/1.1 de la spécification HTTP a tenté de résoudre ces problèmes quelques années plus tard en introduisant le concept 
+de connexions «keep-alive».
+Cela permet aux clients de réutiliser les connexions TCP, et donc d'amortir le coût de l'établissement de la connexion initiale et de
+ ralentir commencez par plusieurs demandes.
+Mais ce n'était pas une solution miracle: alors que plusieurs demandes pouvaient partager la même connexion, elles devaient toujours
+ être sérialisées l'une après l'autre.
+Ainsi un client et un serveur ne pouvaient exécuter qu'un seul échange de demande et réponse à un moment donné pour chaque connexion. </h3>
+					<li> HTTP/2 </li>
+				<h3> HTTP/2 vise à corriger les limitations de la version 1.1 et ainsi améliorer les temps de réponse de chargement des pages.
+C'était d'autant plus nécessaires que les sites WEB sont devenus plus lourd avec le CSS, images et JavaScript.
+Cela notamment à travers le protocole SPDY.
+
+SPDY était un protocole expérimental, développé chez Google et annoncé à la mi-2009, dont l'objectif principal était d'essayer de réduire 
+la latence de charge des pages Web en abordant certaines des limitations de performances bien connues de HTTP / 1.1.
+
+Les spécifications de la version 2 du protocole HTTP ont commencé en 2009 pour se terminer en 2015.
+
+Voici les améliorations apportées :
+
+Compression des en-têtes HTTP
+HTTP / 2 Serveur Push : cela permet de charger des ressources de manière préventives
+pipeline des demandes et le multiplexage de plusieurs requêtes sur une seule connexion TCP. HTTP/2 permet d'envoyer plusieurs stream dans 
+une même connexion TCP.
+correction du problème de blocage de tête de ligne dans HTTP 1.x </h3>
+					<li> HTTP/3 </li>
+				<h3> HTTP/3 tente aussi d'améliorer la vitesse de chargement des pages WEB à travers le protocole QUIC.
+
+Quic est un protocole de transport développé par Google.
+Ce dernier nommé au départ HTTP-over-QUIC a ensuite donné naissance à HTTP/3.
+Une des particularités est qu'il utilise le protocole de transport UDP.
+Ce dernier étant plus rapide que TCP. </h3>
+			</ul>
+				<img src= "https://www.malekal.com/wp-content/uploads/http-1-1-vs-http-2-1536x603.jpg"> 
+		</br> 	</br> 	</br>
+		
+		
+		<h2> Les fonctionnement du protocole http : </h2> 
+		<h3> 1)- Les méthodes HTTP </h3> </br> </br>  
+			<ul> 
+				<li> DELETE </li> 
+					<h3> Supprime la ressource spécifiée </h3>
+				<li> GET </li>
+					<h3>On demande une ressource au serveur WEB. En général, il s'agit du contenu d'une page WEB</h3>
+				<li> HEAD </li>
+					<h3>On demande QUE le contenu d'une en-tête HTTP</h3>
+				<li> PUT </li>
+					<h3>Est utilisé pour envoyer des données à un serveur pour créer / mettre à jour une ressource</h3>
+				<li> OPTION </li>
+					<h3>Décrit les options de communication pour la ressource cible</h3>
+				<li> POST </li>
+					<h3>Permet d'insérer ou mettre à jour une donnée</h3>
+				<li> Exemple d'une requête HTTP : </li> 
+				<img src="https://www.malekal.com/wp-content/uploads/HTTP_Request.jpg">
+			</ul>
+		</br> 	</br> 	</br>
+		   
+			
+			<h2> Quel est le rapport entre http et https ?  </h2> 
+		<h3> 
+HTTP et HTTPS garantissent que les données présentées à l’utilisateur final sont sécurisées. Cela n’a aucun rapport avec
+ la manière dont les données parviennent au site Web. En d’autres termes, cela ne protège pas les frappes de clavier, 
+ de sorte que ces données pourraient être interceptées par des pirates. </h3>
+	<img src= "https://th.bing.com/th/id/R748314307c5e2e2e95ddfa6239e85294?rik=5%2bQ4WwbZYvBtlw&riu=http%3a%2f%2ftechstream.org%2fimages%2fimg%2fHTTPS.
+			jpg&ehk=k6Io2zk8dXYuDFfRIEWdSd0bI%2fmHqepivY%2fIhb%2f174A%3d&risl=&pid=ImgRaw"> 
+		
+		</br> 	</br> 	</br> 
+			
+					<h2> Quelle est la différence entre HTTP et HTTPS ? </h2> 
+		<h3> Voici la différence entre HTTP et HTTPS, expliquée dans une super infographie créée par FirstSiteGuide.</br> 
+		J’en expliquerai les éléments principaux plus loin. </h3>
+			<h3> 1)- HTTP : les données ne sont pas chiffrées
+Toutes les URL qui commencent par HTTP utilisent un protocole simple de transfert hypertexte. Créé au début des années 1990 par Tim Berners-Lee, lorsqu’Internet en était encore à ses prémices, c’est grâce à ce protocole de réseaux standard que les navigateurs et les serveurs peuvent communiquer en échangeant des données.
+
+HTTP est un système sans état, ce qui signifie qu’il permet de créer des connexions à la demande. Lorsque vous cliquez sur un lien, une connexion est sollicitée et votre navigateur web envoie la demande au serveur qui répond en ouvrant la page. Plus la connexion est rapide plus les données s’affichent rapidement.
+
+En tant que protocole de couche d’application, l’unique objectif de HTTP est d’afficher les informations demandées sans se soucier de la façon dont ces informations se déplacent d’un endroit à un autre. Malheureusement, cela signifie que HTTP peut être intercepté et éventuellement détourné, ce qui rend les informations et leurs destinataires (c’est-à-dire vous) vulnérables.</h3>
+			<h3> 2)- HTTPS : connexions chiffrées
+HTTPS n’est pas l’opposé de HTTP mais plutôt son petit cousin. Tous deux sont des protocoles de transfert hypertexte qui permettent à des données web d’être affichées sur votre écran lorsque vous envoyez une requête. Cependant, HTTPS est légèrement différent, plus avancé et bien plus sécurisé.
+
+En gros, le protocole HTTPS est une extension de HTTP. Le « S » à la fin est l’initiale du mot « Secure » (sécurisé) et il fonctionne grâce au protocole TLS (Transport Layer Security), le successeur du protocole SSL (Secure Sockets Layer), la technologie de sécurité standard pour établir une connexion chiffrée entre un serveur web et un navigateur.
+
+Sans la présence de HTTPS, toutes les données que vous entrez sur un site (ex : nom d’utilisateur, mot de passe, carte bancaire, RIB ou tout autre information requise dans un formulaire) seront envoyées en format de texte brute et seront, par conséquent, vulnérables aux interceptions et à l’espionnage. C’est pour cette raison que vous devriez toujours vérifier qu’un site utilise bien HTTPS avant d’y entrer quelques données que ce soit.
+
+En plus de chiffrer les données transmises entre un serveur et votre navigateur, le protocole TLS authentifie également le serveur auquel vous vous connectez et protège les données transmises de toute altération.
+
+Pour vous aider à comprendre la différence, imaginez que HTTP dans HTTPS est l’équivalent d’une destination, tandis que SSL est l’équivalent d’un voyage. Le premier est chargé d’acheminer les données vers votre écran, le dernier gère la façon dont ces données sont déplacées. En joignant force, ils permettent aux flux de données d’être sécurisés.</h3>
+			<img src= "https://www.globalsign.com/application/files/2315/2706/5454/infographic-gs.jpg"> 
+		
+		</br> 	</br> 	</br>
+
+		<h2> Les avantages du HTTPS  </h2> 
+		<h3> Les avantages en termes de sécurité mentionnés plus haut, soit l’authentification du serveur, le chiffrement des échanges de données et leur protection contre les altérations, sont les avantages évidents et principaux du protocole HTTPS. Les administrateurs de sites web souhaitent et doivent protéger les données de leurs visiteurs (HTTPS est même obligatoire pour les sites qui demandent des informations de paiement selon la norme PCI Data Security) tandis que les visiteurs souhaitent savoir que leurs données sont transmises de façon sécurisée.
+
+Un autre avantage du HTTPS repose sur la demande croissante du public pour la confidentialité et la sécurité de leurs données. En effet, selon We Make Websites, 13 % des paniers sont abandonnés en raison d’une inquiétude quant à la sécurité du paiement. Les visiteurs d’un site veulent savoir qu’ils peuvent lui faire confiance, notamment lorsqu’ils entrent des coordonnées bancaires. Utiliser HTTPS permet de renforcer cette confiance (en prouvant à vos visiteurs que les informations qu’ils entreront seront chiffrées).
+
+HTTPS vous aide également pour votre stratégie SEO. En 2014, Google a annoncé que HTTPS serait désormais considéré comme un facteur de référencement naturel. Depuis, plusieurs études et expériences non confirmées menées par des entreprises qui ont implémenté HTTPS semblent indiquer une corrélation avec une amélioration du référencement et de la visibilité de leur site.
+
+Les navigateurs se joignent également à l’effort pour renforcer l’utilisation de HTTPS en modifiant leur interface de façon à ce que les sites non sécurisés avec HTTPS soient pénalisés. Google a, par exemple, annoncé, en début d’année, qu’à partir du mois de juillet, Chrome afficherait tous les sites HTTP comme étant non-sécurisés. </h3>
+		
+		</br> 	</br> 	</br>
+			
+			
+			
+					</br> </br> </br> 
+					<table width="100%" border="1" cellspacing="1" cellpadding="1" >
+						<tr><td><div align="center">	<a href = "https://www.instagram.com/oumaima.daha/"> My instagram </a>  </div> </td>
+						<td><div align="center">	    <a href = "https://www.facebook.com/ouma.dh.735/"> My facebook </a></div> </td>
+						<td><div align="center">	    <a href = "https://oumaima-beauty.business.site/">My business acount  </a> </div> </td></tr>
+						</table>
+</br> </br> </br> </br> </br> 
+<a href="https://www.youtube.com/watch?v=0X1WzLo2wNQ"><h1> Cliquer ici! </h1></a>
+
+</br> </br> </br> </br> </br> 
+	</body>
+	
+</html>
